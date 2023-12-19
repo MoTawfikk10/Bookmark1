@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+  </head>
+  <body>
+    <section class="m-5 w-75 m-auto p-2">
+      <div class="text-center mb-5">
+        <h1>Bookmark</h1>
+      </div>
+      <div class="inpuGroup py-3">
+        <div class="text-center mb-5 mt-4 overflow-auto">
+          <h2>
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sitess
+            <i class="fa-solid fa-bookmark"></i>
+          </h2>
+        </div>
+        <label for="siteName">Site Name</label>
+        <input id="siteName" type="text" class="form-control" />
+
+        <label for="siteUrl">Site URL</label>
+        <input id="siteUrl" type="text" class="form-control" />
+        <button
+          id="btSubmit"
+          class="btn-group btn px-2 py-1 mt-3 Subbtn"
+          onclick="addNwesite();"
+        >
+          Submit
+        </button>
+      </div>
+
+      <table class="table mt-3">
+        <thead>
+          <th>Index</th>
+          <th>Website Name</th>
+          <th>Visit</th>
+          <th>Delete</th>
+          <th>Update</th>
+        </thead>
+        <tbody id="tabWeb"></tbody>
+      </table>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

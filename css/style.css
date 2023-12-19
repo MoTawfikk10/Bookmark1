@@ -1,0 +1,55 @@
+::selection {
+  background: rgba(217, 192, 163, 0.5);
+}
+
+body {
+  background-color: #d8d9cf;
+}
+
+h1 {
+  font-family: Impact;
+  font-size: 70px;
+  color: #0f2c59;
+}
+
+.Subbtn {
+  background-color: #d9c0a3;
+  transition: 0.5s all;
+}
+
+.Subbtn:hover {
+  background-color: #0f2c5980;
+  color: #f4f2de;
+  box-shadow: 0 0 0 2px;
+}
+
+.inpuGroup {
+  border-top: 2px dotted black;
+  border-bottom: 2px dotted black;
+}
+h2 {
+  font-size: 25px;
+  background-image: linear-gradient(to right, #1d1c0f, #0f2c5980);
+  background-clip: text;
+  color: transparent;
+}
+
+h1 {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+h1::before {
+  content: "";
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  background-color: #d9c0a3;
+  bottom: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+h1:hover::before {
+  height: 60%;
+}
